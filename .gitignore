@@ -1,0 +1,9 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+*.pt
+*.pth
+*.safetensors
+outputs/feat_cache/
+third_party/**/model_weights
+third_party/**/results/

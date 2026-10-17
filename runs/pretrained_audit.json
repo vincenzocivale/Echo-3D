@@ -1,0 +1,797 @@
+{
+ "usfm_native_14x14": {
+  "loaded_params": 85665360,
+  "loaded_tensors": 186,
+  "adapted": {},
+  "ckpt_not_used": {
+   "mask_token": [
+    1,
+    1,
+    768
+   ],
+   "rel_pos_bias.relative_position_index": [
+    197,
+    197
+   ]
+  },
+  "ckpt_not_used_params": 39577,
+  "random_init_params": 0,
+  "random_init_tensors": 0,
+  "random_init_modules": [],
+  "model_params": 85665360
+ },
+ "videomae_native": {
+  "loaded_params": 85440768,
+  "loaded_tensors": 160,
+  "adapted": {
+   "embed.weight": "3->1 channel: sum_c W_c/std_c (exact for a gray image replicated to RGB and ImageNet-normalised); bias absorbs the means"
+  },
+  "ckpt_not_used": {
+   "decoder.decoder_layers.0.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.0.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.0.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.decoder_layers.1.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.1.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.1.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.decoder_layers.2.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.2.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.2.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.decoder_layers.3.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.3.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.3.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.head.bias": [
+    1536
+   ],
+   "decoder.head.weight": [
+    1536,
+    384
+   ],
+   "decoder.norm.bias": [
+    384
+   ],
+   "decoder.norm.weight": [
+    384
+   ],
+   "encoder_to_decoder.weight": [
+    384,
+    768
+   ],
+   "mask_token": [
+    1,
+    1,
+    384
+   ]
+  },
+  "ckpt_not_used_params": 7983744,
+  "random_init_params": 0,
+  "random_init_tensors": 0,
+  "random_init_modules": [],
+  "model_params": 85440768
+ },
+ "usfm_7x10": {
+  "loaded_params": 85659576,
+  "loaded_tensors": 186,
+  "adapted": {
+   "rel_pos_bias.relative_position_bias_table": "bicubic resize of the 27x27 offset table (+3 cls entries) for a 7x10 token grid"
+  },
+  "ckpt_not_used": {
+   "mask_token": [
+    1,
+    1,
+    768
+   ],
+   "rel_pos_bias.relative_position_index": [
+    197,
+    197
+   ]
+  },
+  "ckpt_not_used_params": 39577,
+  "random_init_params": 0,
+  "random_init_tensors": 0,
+  "random_init_modules": [],
+  "model_params": 85659576
+ },
+ "videomae_7x10_stride2": {
+  "loaded_params": 85440768,
+  "loaded_tensors": 160,
+  "adapted": {
+   "embed.weight": "3->1 channel: sum_c W_c/std_c (exact for a gray image replicated to RGB and ImageNet-normalised); bias absorbs the means"
+  },
+  "ckpt_not_used": {
+   "decoder.decoder_layers.0.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.0.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.0.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.decoder_layers.1.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.1.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.1.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.decoder_layers.2.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.2.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.2.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.decoder_layers.3.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.3.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.3.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.head.bias": [
+    1536
+   ],
+   "decoder.head.weight": [
+    1536,
+    384
+   ],
+   "decoder.norm.bias": [
+    384
+   ],
+   "decoder.norm.weight": [
+    384
+   ],
+   "encoder_to_decoder.weight": [
+    384,
+    768
+   ],
+   "mask_token": [
+    1,
+    1,
+    384
+   ]
+  },
+  "ckpt_not_used_params": 7983744,
+  "random_init_params": 0,
+  "random_init_tensors": 0,
+  "random_init_modules": [],
+  "model_params": 85440768
+ },
+ "videomae_7x10_stride1": {
+  "loaded_params": 85440768,
+  "loaded_tensors": 160,
+  "adapted": {
+   "embed.weight": "3->1 channel: sum_c W_c/std_c (exact for a gray image replicated to RGB and ImageNet-normalised); bias absorbs the means"
+  },
+  "ckpt_not_used": {
+   "decoder.decoder_layers.0.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.0.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.0.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.0.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.0.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.decoder_layers.1.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.1.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.1.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.1.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.1.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.decoder_layers.2.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.2.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.2.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.2.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.2.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.decoder_layers.3.attention.attention.key.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.q_bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.query.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.v_bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.attention.attention.value.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.attention.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.attention.output.dense.weight": [
+    384,
+    384
+   ],
+   "decoder.decoder_layers.3.intermediate.dense.bias": [
+    1536
+   ],
+   "decoder.decoder_layers.3.intermediate.dense.weight": [
+    1536,
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_after.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_after.weight": [
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_before.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.layernorm_before.weight": [
+    384
+   ],
+   "decoder.decoder_layers.3.output.dense.bias": [
+    384
+   ],
+   "decoder.decoder_layers.3.output.dense.weight": [
+    384,
+    1536
+   ],
+   "decoder.head.bias": [
+    1536
+   ],
+   "decoder.head.weight": [
+    1536,
+    384
+   ],
+   "decoder.norm.bias": [
+    384
+   ],
+   "decoder.norm.weight": [
+    384
+   ],
+   "encoder_to_decoder.weight": [
+    384,
+    768
+   ],
+   "mask_token": [
+    1,
+    1,
+    384
+   ]
+  },
+  "ckpt_not_used_params": 7983744,
+  "random_init_params": 0,
+  "random_init_tensors": 0,
+  "random_init_modules": [],
+  "model_params": 85440768
+ },
+ "Net2D_usfm_total": {
+  "audit": {
+   "loaded_params": 85659576,
+   "loaded_tensors": 186,
+   "adapted": {
+    "rel_pos_bias.relative_position_bias_table": "bicubic resize of the 27x27 offset table (+3 cls entries) for a 7x10 token grid"
+   },
+   "ckpt_not_used": {
+    "mask_token": [
+     1,
+     1,
+     768
+    ],
+    "rel_pos_bias.relative_position_index": [
+     197,
+     197
+    ]
+   },
+   "ckpt_not_used_params": 39577,
+   "random_init_params": 0,
+   "random_init_tensors": 0,
+   "random_init_modules": [],
+   "model_params": 85659576
+  },
+  "total_params": 93079608,
+  "by_module": {
+   "backbone": 85659576,
+   "proj": 295296,
+   "enc": 7097856
+  }
+ }
+}

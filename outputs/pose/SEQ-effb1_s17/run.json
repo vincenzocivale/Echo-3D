@@ -1,0 +1,45 @@
+{
+ "split_sha256": "e8c3714a4fa12260af22585e6495e2019c8792fed32494158257b90d9d303ae2",
+ "encoder": "SeqPairCNN",
+ "commit": "no-git",
+ "seed": 17,
+ "cfg": {
+  "arm": "SEQ-effb1",
+  "L": 16,
+  "model": {
+   "backbone": "effb1",
+   "imagenet": true,
+   "dim": 256,
+   "depth": 2,
+   "heads": 4,
+   "temporal": true
+  },
+  "loss": {
+   "sigma_rot": 0.002,
+   "sigma_trans": 0.4
+  },
+  "loss_offsets": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "out_dir": "outputs",
+  "seed": 17,
+  "size": [
+   192,
+   256
+  ],
+  "split": "configs/splits/split_v1.json",
+  "train": {
+   "steps": 5000,
+   "batch": 4,
+   "lr": 0.0003,
+   "wd": 0.01,
+   "warmup": 200,
+   "workers": 8,
+   "eval_every": 1000,
+   "eval_scans_every": 7
+  }
+ }
+}

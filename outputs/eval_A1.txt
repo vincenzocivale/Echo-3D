@@ -1,0 +1,9 @@
+all {'GPE': 56.754, 'LPE': 0.299, 'GLE': 54.812, 'LLE': 0.293, 'rot_mrad_k1': 1.549, 'trans_mm_k1': 0.312, 'trans_mm_k8': 1.964, 'sec_scan': 0.079} 
+identity {'GPE': 85.497, 'LPE': 0.377, 'GLE': 80.909, 'LLE': 0.381}
+trajectory=C {'GPE': 57.615, 'LPE': 0.313, 'GLE': 54.644, 'LLE': 0.309, 'rot_mrad_k1': 1.631, 'trans_mm_k1': 0.33, 'trans_mm_k8': 2.109, 'sec_scan': 0.118}
+trajectory=L {'GPE': 55.473, 'LPE': 0.273, 'GLE': 52.933, 'LLE': 0.254, 'rot_mrad_k1': 1.202, 'trans_mm_k1': 0.275, 'trans_mm_k8': 1.501, 'sec_scan': 0.054}
+trajectory=S {'GPE': 57.213, 'LPE': 0.311, 'GLE': 57.044, 'LLE': 0.317, 'rot_mrad_k1': 1.837, 'trans_mm_k1': 0.333, 'trans_mm_k8': 2.312, 'sec_scan': 0.065}
+orientation=Par {'GPE': 43.679, 'LPE': 0.281, 'GLE': 39.705, 'LLE': 0.289, 'rot_mrad_k1': 1.531, 'trans_mm_k1': 0.284, 'trans_mm_k8': 1.763, 'sec_scan': 0.096}
+orientation=Per {'GPE': 69.102, 'LPE': 0.316, 'GLE': 69.079, 'LLE': 0.296, 'rot_mrad_k1': 1.566, 'trans_mm_k1': 0.339, 'trans_mm_k8': 2.155, 'sec_scan': 0.063}
+direction=DtP {'GPE': 53.611, 'LPE': 0.294, 'GLE': 43.713, 'LLE': 0.296, 'rot_mrad_k1': 1.567, 'trans_mm_k1': 0.307, 'trans_mm_k8': 1.92, 'sec_scan': 0.096}
+direction=PtD {'GPE': 60.082, 'LPE': 0.304, 'GLE': 66.563, 'LLE': 0.289, 'rot_mrad_k1': 1.529, 'trans_mm_k1': 0.317, 'trans_mm_k8': 2.011, 'sec_scan': 0.061}

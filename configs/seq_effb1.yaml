@@ -1,0 +1,12 @@
+# Option B: SeqPairCNN = EffB1-ImageNet early-fusion pair features + temporal transformer over windows of L frames (models/seq_cnn.py).
+# Same init/size/steps/lr as pose_CNN_effb1_imnet.yaml; batch = 4 windows x 15 pairs = 60 pairs/step (pair model: 32).
+arm: SEQ-effb1
+L: 16
+model: {backbone: effb1, imagenet: true, dim: 256, depth: 2, heads: 4, temporal: true}
+loss: {sigma_rot: 0.002, sigma_trans: 0.4}
+loss_offsets: [1, 2, 4, 8]
+out_dir: outputs
+seed: 17
+size: [192, 256]
+split: configs/splits/split_v1.json
+train: {steps: 5000, batch: 4, lr: 3.0e-4, wd: 0.01, warmup: 200, workers: 8, eval_every: 1000, eval_scans_every: 7}

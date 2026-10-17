@@ -1,0 +1,56 @@
+{
+ "split_sha256": "e8c3714a4fa12260af22585e6495e2019c8792fed32494158257b90d9d303ae2",
+ "encoder": "USFM ViT-B/16 (USFM_latest.pth)",
+ "encoder_sha256": "d5fdab3edd140e4ca61471bb4087f91cd7ff2ce270db71b9cab30feda881bd17",
+ "commit": "no-git",
+ "seed": 17,
+ "cfg": {
+  "arm": "A0",
+  "encoder": {
+   "frozen": true,
+   "layers": [
+    0,
+    4
+   ],
+   "pretrained": true
+  },
+  "loss": {
+   "nll": false,
+   "sigma_rot": 0.002,
+   "sigma_trans": 0.4
+  },
+  "model": {
+   "depth": 2,
+   "dim": 256,
+   "heads": 8,
+   "sinkhorn_iters": 3
+  },
+  "offsets": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "out_dir": "outputs",
+  "seed": 17,
+  "size": [
+   192,
+   256
+  ],
+  "split": "configs/splits/split_v1.json",
+  "train": {
+   "batch": 32,
+   "eval_every": 1500,
+   "eval_scans_every": 10,
+   "lr": 0.0003,
+   "steps": 1500,
+   "warmup": 200,
+   "wd": 0.01,
+   "workers": 8
+  },
+  "wandb": {
+   "enabled": false,
+   "project": "usmotion4d"
+  }
+ }
+}

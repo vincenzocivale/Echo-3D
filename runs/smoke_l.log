@@ -1,0 +1,6 @@
+{"name": "smoke_l", "window": 4, "L": 64, "stride": 1, "bs": 8, "steps": 100, "lr": 0.0001, "lam": 0.05, "n_val": 1, "eval_every": 1000, "dim": 384, "depth": 8, "log_every": 50} train subjects 24 val ['014']
+first-batch checksum 1001641.938 -2172.417
+{"step": 50, "loss_local": 0.4169074296951294, "loss_global": 9.576409339904785, "lam_loss_global": 0.4788204669952393, "gn_local": 765.4267578125, "gn_global_lam": 384.8109130859375}
+{"step": 100, "loss_local": 0.4775626063346863, "loss_global": 13.882468223571777, "lam_loss_global": 0.6941234111785889, "gn_local": 258.51495361328125, "gn_global_lam": 96.04342651367188}
+EVAL {"lag256": 96.17, "LLE": 0.388, "lag16": 6.072, "bnd": 0.402, "int": 0.39, "lag64": 24.323, "GLE": 96.238, "lag1": 0.391, "LPE": 0.384, "GPE": 90.082, "lag4": 1.524, "sec_per_scan": 0.098, "step": 100}
+DONE peak_mem_gb 5.2 sec/step 0.280

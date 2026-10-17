@@ -1,0 +1,32 @@
+probe_P1: 2.11M trainable | split e8c3714a | encoder frozen: True
+step 50 rot=0.3374 trans=0.5234 rot_mrad=4.88 trans_mm=1.489 loss=0.8608 gnorm=0.9274 lr=7.629e-05 step=50 | 10s 1.1GB
+step 100 rot=0.3211 trans=0.5217 rot_mrad=5.015 trans_mm=1.502 loss=0.8428 gnorm=0.9158 lr=0.0001498 step=100 | 18s 1.1GB
+step 150 rot=0.3477 trans=0.5254 rot_mrad=5.058 trans_mm=1.47 loss=0.8731 gnorm=0.555 lr=0.000221 step=150 | 25s 1.1GB
+step 200 rot=0.3357 trans=0.5423 rot_mrad=5.124 trans_mm=1.532 loss=0.878 gnorm=0.5523 lr=0.000287 step=200 | 33s 1.1GB
+step 250 rot=0.3316 trans=0.5136 rot_mrad=4.988 trans_mm=1.484 loss=0.8453 gnorm=0.4659 lr=0.0002799 step=250 | 41s 1.1GB
+step 300 rot=0.3497 trans=0.5497 rot_mrad=5.24 trans_mm=1.543 loss=0.8993 gnorm=0.2853 lr=0.0002714 step=300 | 49s 1.1GB
+step 350 rot=0.3433 trans=0.5214 rot_mrad=5.215 trans_mm=1.514 loss=0.8647 gnorm=0.2054 lr=0.0002615 step=350 | 56s 1.1GB
+step 400 rot=0.3304 trans=0.5275 rot_mrad=5.122 trans_mm=1.498 loss=0.8578 gnorm=0.6099 lr=0.0002504 step=400 | 63s 1.1GB
+step 450 rot=0.3301 trans=0.5335 rot_mrad=4.784 trans_mm=1.458 loss=0.8636 gnorm=0.474 lr=0.0002382 step=450 | 70s 1.1GB
+step 500 rot=0.3335 trans=0.5369 rot_mrad=4.962 trans_mm=1.491 loss=0.8704 gnorm=0.2962 lr=0.000225 step=500 | 78s 1.1GB
+step 550 rot=0.3271 trans=0.5199 rot_mrad=5.043 trans_mm=1.502 loss=0.847 gnorm=0.4301 lr=0.000211 step=550 | 86s 1.1GB
+step 600 rot=0.3386 trans=0.519 rot_mrad=5.136 trans_mm=1.519 loss=0.8575 gnorm=0.3234 lr=0.0001964 step=600 | 94s 1.1GB
+step 650 rot=0.341 trans=0.5329 rot_mrad=5.055 trans_mm=1.525 loss=0.8738 gnorm=0.1724 lr=0.0001812 step=650 | 101s 1.1GB
+step 700 rot=0.3189 trans=0.528 rot_mrad=4.747 trans_mm=1.446 loss=0.8469 gnorm=0.4525 lr=0.0001657 step=700 | 109s 1.1GB
+step 750 rot=0.3487 trans=0.5346 rot_mrad=4.942 trans_mm=1.466 loss=0.8833 gnorm=0.407 lr=0.00015 step=750 | 117s 1.1GB
+step 800 rot=0.3284 trans=0.5165 rot_mrad=4.801 trans_mm=1.447 loss=0.8449 gnorm=0.1513 lr=0.0001343 step=800 | 124s 1.1GB
+step 850 rot=0.3372 trans=0.5348 rot_mrad=5.344 trans_mm=1.551 loss=0.8721 gnorm=0.155 lr=0.0001188 step=850 | 132s 1.1GB
+step 900 rot=0.3117 trans=0.5289 rot_mrad=4.708 trans_mm=1.49 loss=0.8406 gnorm=0.2349 lr=0.0001036 step=900 | 140s 1.1GB
+step 950 rot=0.3383 trans=0.5137 rot_mrad=5.099 trans_mm=1.457 loss=0.852 gnorm=0.4561 lr=8.899e-05 step=950 | 148s 1.1GB
+step 1000 rot=0.3272 trans=0.5302 rot_mrad=5.138 trans_mm=1.562 loss=0.8574 gnorm=0.4528 lr=7.5e-05 step=1000 | 155s 1.1GB
+step 1050 rot=0.3361 trans=0.5159 rot_mrad=5.053 trans_mm=1.457 loss=0.852 gnorm=0.1943 lr=6.183e-05 step=1050 | 163s 1.1GB
+step 1100 rot=0.3258 trans=0.5225 rot_mrad=4.946 trans_mm=1.471 loss=0.8483 gnorm=0.2459 lr=4.963e-05 step=1100 | 171s 1.1GB
+step 1150 rot=0.3106 trans=0.5234 rot_mrad=4.913 trans_mm=1.485 loss=0.834 gnorm=0.198 lr=3.853e-05 step=1150 | 179s 1.1GB
+step 1200 rot=0.3358 trans=0.5356 rot_mrad=4.844 trans_mm=1.494 loss=0.8714 gnorm=0.2464 lr=2.865e-05 step=1200 | 187s 1.1GB
+step 1250 rot=0.3412 trans=0.542 rot_mrad=5.203 trans_mm=1.58 loss=0.8831 gnorm=0.4267 lr=2.01e-05 step=1250 | 196s 1.1GB
+step 1300 rot=0.3424 trans=0.5287 rot_mrad=4.969 trans_mm=1.465 loss=0.8711 gnorm=0.2876 lr=1.297e-05 step=1300 | 204s 1.1GB
+step 1350 rot=0.3267 trans=0.5372 rot_mrad=4.952 trans_mm=1.507 loss=0.8639 gnorm=0.6049 lr=7.342e-06 step=1350 | 212s 1.1GB
+step 1400 rot=0.3226 trans=0.5514 rot_mrad=4.821 trans_mm=1.503 loss=0.874 gnorm=0.1438 lr=3.278e-06 step=1400 | 220s 1.1GB
+step 1450 rot=0.3361 trans=0.5267 rot_mrad=4.993 trans_mm=1.468 loss=0.8628 gnorm=0.2272 lr=8.217e-07 step=1450 | 228s 1.1GB
+step 1500 rot=0.3431 trans=0.5375 rot_mrad=5.049 trans_mm=1.507 loss=0.8807 gnorm=0.2242 lr=0 step=1500 | 236s 1.1GB
+DEV {'GPE': 82.3587, 'LPE': 0.3795, 'GLE': 68.466, 'LLE': 0.3872, 'rot_mrad_k1': 1.8032, 'trans_mm_k1': 0.4019, 'trans_mm_k8': 3.1159}

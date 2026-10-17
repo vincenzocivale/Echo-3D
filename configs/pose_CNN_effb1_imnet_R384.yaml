@@ -1,0 +1,12 @@
+# EfficientNet-B1 ImageNet pair network at 384x512 (only change vs pose_CNN_effb1_imnet.yaml): is wx limited by resolution?
+arm: CNN-effb1-imnet-R384
+encoder: {type: cnn}
+model: {backbone: effb1, imagenet: true, dim: 256}
+loss: {sigma_rot: 0.002, sigma_trans: 0.4, nll: false}
+offsets: [1, 2, 4, 8]
+out_dir: outputs
+seed: 17
+size: [384, 512]
+split: configs/splits/split_v1.json
+train: {steps: 5000, batch: 32, lr: 3.0e-4, wd: 0.01, warmup: 200, workers: 8, eval_every: 1000, eval_scans_every: 7, reverse_prob: 0.0}
+wandb: {enabled: false, project: usmotion4d}

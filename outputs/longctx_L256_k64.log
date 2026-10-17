@@ -1,0 +1,23 @@
+/home/vcivale/Echo-3D/scripts/train_longctx.py:36: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return [(e, torch.load(os.path.join(cache, key(e) + ".pt"))) for e in entries]
+L256_k64: L=256 offsets=[1, 2, 4, 8, 16, 32, 64] | 959 train scans usable
+step 250 loss=0.353 gnorm=0.904 | 11s
+step 500 loss=0.2093 gnorm=1.16 | 21s
+step 750 loss=0.2013 gnorm=0.707 | 32s
+step 1000 loss=0.1963 gnorm=0.916 | 43s
+DEV(every7) {'GPE': 10.9143, 'LPE': 0.154, 'GLE': 9.4834, 'LLE': 0.1404, 'corner_err_end': 17.067}
+step 1250 loss=0.1882 gnorm=0.68 | 57s
+step 1500 loss=0.1807 gnorm=1.04 | 68s
+step 1750 loss=0.1726 gnorm=0.965 | 78s
+step 2000 loss=0.1731 gnorm=0.826 | 89s
+DEV(every7) {'GPE': 10.8959, 'LPE': 0.1529, 'GLE': 9.8483, 'LLE': 0.1397, 'corner_err_end': 17.3509}
+step 2250 loss=0.1695 gnorm=0.974 | 103s
+step 2500 loss=0.1672 gnorm=0.613 | 114s
+step 2750 loss=0.16 gnorm=0.78 | 125s
+step 3000 loss=0.1563 gnorm=0.52 | 135s
+DEV(every7) {'GPE': 10.0561, 'LPE': 0.151, 'GLE': 8.7556, 'LLE': 0.1366, 'corner_err_end': 16.1798}
+step 3250 loss=0.1539 gnorm=0.695 | 150s
+step 3500 loss=0.1544 gnorm=0.748 | 160s
+step 3750 loss=0.1519 gnorm=0.6 | 171s
+step 4000 loss=0.1516 gnorm=0.389 | 181s
+DEV(n=240) {'GPE': 10.836, 'LPE': 0.1591, 'GLE': 9.7017, 'LLE': 0.1415, 'corner_err_end': 17.5477}

@@ -1,0 +1,8 @@
+{"enc": "videomae", "head": "pose", "name": "smoke_videomae_pose", "L": 64, "bs": 8, "steps": 60, "lr_enc": 2e-05, "lr_new": 0.0001, "lam": 0.05, "Q": 512, "id_frac": 0.1, "n_val": 1, "eval_every": 60, "log_every": 20} val ['043']
+AUDIT loaded 85.44M of encoder (160 tensors), ckpt tensors unused ['decoder.decoder_layers.0.attention.attention.key.weight', 'decoder.decoder_layers.0.attention.attention.q_bias'], random-init in encoder 0.00M; pretrained-lr params 85.44M, new 0.01M
+first-batch checksum 864053.5 -2990.187
+{"step": 20, "loss": 1.16041, "loss_local": 0.45717, "loss_global": 14.06482, "lr_enc": 1.5922368837239696e-05, "lr_new": 7.961184418619848e-05, "grad_norm": {"enc_blocks_0-3": 1.41411, "enc_blocks_4-7": 1.79346, "enc_blocks_8-11": 1.71105, "enc_norm": 0.31409, "enc_patch_embed": 0.185, "pose_head": 2146.04396}}
+{"step": 40, "loss": 1.11303, "loss_local": 0.46985, "loss_global": 12.86358, "lr_enc": 5.4847244782254415e-06, "lr_new": 2.7423622391127207e-05, "grad_norm": {"enc_blocks_0-3": 2.47633, "enc_blocks_4-7": 2.78861, "enc_blocks_8-11": 2.43048, "enc_norm": 0.47589, "enc_patch_embed": 0.2775, "pose_head": 2563.81361}}
+{"step": 60, "loss": 0.92491, "loss_local": 0.3651, "loss_global": 11.19625, "lr_enc": 8.000000000000001e-11, "lr_new": 3.9999999999999996e-10, "grad_norm": {"enc_blocks_0-3": 1.3455, "enc_blocks_4-7": 1.68009, "enc_blocks_8-11": 1.54052, "enc_norm": 0.32153, "enc_patch_embed": 0.16781, "pose_head": 2177.85792}}
+EVAL {"step": 60, "grad_norm_total": 2177.8596, "pose": {"LLE": 0.406, "bnd": 0.417, "int": 0.418, "lag256": 101.381, "GPE": 90.754, "lag64": 25.546, "GLE": 84.08, "lag4": 1.624, "lag1": 0.418, "lag16": 6.432, "LPE": 0.408, "sec_per_scan": 0.317}}
+DONE peak_mem_gb 13.8 sec/step 0.730

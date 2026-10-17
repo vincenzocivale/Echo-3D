@@ -1,0 +1,55 @@
+{
+ "split_sha256": "e8c3714a4fa12260af22585e6495e2019c8792fed32494158257b90d9d303ae2",
+ "encoder": "PairCNN (scratch)",
+ "encoder_sha256": null,
+ "commit": "no-git",
+ "seed": 17,
+ "cfg": {
+  "arm": "CNN",
+  "encoder": {
+   "type": "cnn"
+  },
+  "model": {
+   "widths": [
+    32,
+    64,
+    128,
+    256
+   ],
+   "dim": 256
+  },
+  "loss": {
+   "sigma_rot": 0.002,
+   "sigma_trans": 0.4,
+   "nll": false
+  },
+  "offsets": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "out_dir": "outputs",
+  "seed": 17,
+  "size": [
+   192,
+   256
+  ],
+  "split": "configs/splits/split_v1.json",
+  "train": {
+   "steps": 600,
+   "batch": 32,
+   "lr": 0.0003,
+   "wd": 0.01,
+   "warmup": 200,
+   "workers": 8,
+   "eval_every": 1000,
+   "eval_scans_every": 7,
+   "reverse_prob": 0.0
+  },
+  "wandb": {
+   "enabled": false,
+   "project": "usmotion4d"
+  }
+ }
+}

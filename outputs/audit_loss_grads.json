@@ -1,0 +1,22 @@
+{
+ "untrained": {
+  "norm_rot_err_mean": 0.7131396532058716,
+  "norm_trans_err_mean": 1.0264664888381958,
+  "frac_rot_in_quadratic_zone": 0.78125,
+  "frac_trans_in_quadratic_zone": 0.609375,
+  "grad_norm_rot": 0.39811971783638,
+  "grad_norm_trans": 0.7014051079750061,
+  "grad_norm_both": 0.8064748644828796,
+  "cos_rot_trans": 0.0001095528932637535
+ },
+ "pilot_A1": {
+  "norm_rot_err_mean": 0.6933286786079407,
+  "norm_trans_err_mean": 0.717818558216095,
+  "frac_rot_in_quadratic_zone": 0.765625,
+  "frac_trans_in_quadratic_zone": 0.765625,
+  "grad_norm_rot": 0.5491644144058228,
+  "grad_norm_trans": 0.5529862642288208,
+  "grad_norm_both": 0.7861911058425903,
+  "cos_rot_trans": 0.01617833599448204
+ }
+}

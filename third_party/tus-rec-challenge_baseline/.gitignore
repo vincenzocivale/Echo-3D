@@ -1,0 +1,44 @@
+# ignore ALL .log files
+*.log
+
+# ignore ALL files in ANY directory named temp
+# .git/
+.idea/
+.vscode/
+__pycache__/
+.DS_Store
+*.sh
+sh/
+example.png
+*.mha
+*.csv
+*.npy
+jobs/
+log/
+loader_merge.py
+data_merge.py
+results2/
+results3/
+results(copy)/
+results-upload/
+submission*.py
+submission_funs*.py
+*.h5
+README-1.md
+README-2.md
+data/
+submission/results*
+submission/data
+*.tar
+md5sums.txt
+*.zip
+
+
+
+
+
+
+
+
+
+

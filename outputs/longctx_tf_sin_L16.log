@@ -1,0 +1,23 @@
+/home/vcivale/Echo-3D/scripts/train_longctx.py:44: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return [(e, torch.load(os.path.join(cache, key(e) + ".pt"))) for e in entries]
+tf_sin_L16: L=16 offsets=[1, 2, 4, 8] | 960 train scans usable
+step 250 loss=0.427 gnorm=3.06 | 10s
+step 500 loss=0.2832 gnorm=2.23 | 17s
+step 750 loss=0.283 gnorm=2.18 | 23s
+step 1000 loss=0.2784 gnorm=2.94 | 29s
+DEV(every7) {'GPE': 15.4929, 'LPE': 0.1474, 'GLE': 13.7935, 'LLE': 0.1346, 'corner_err_end': 24.8709}
+step 1250 loss=0.2658 gnorm=2.45 | 40s
+step 1500 loss=0.2697 gnorm=1.98 | 46s
+step 1750 loss=0.2525 gnorm=1.55 | 53s
+step 2000 loss=0.2662 gnorm=1.88 | 59s
+DEV(every7) {'GPE': 12.637, 'LPE': 0.1398, 'GLE': 10.8732, 'LLE': 0.1256, 'corner_err_end': 20.6832}
+step 2250 loss=0.2578 gnorm=1.82 | 69s
+step 2500 loss=0.2541 gnorm=2.07 | 76s
+step 2750 loss=0.2518 gnorm=1.3 | 82s
+step 3000 loss=0.2487 gnorm=1.93 | 88s
+DEV(every7) {'GPE': 12.0725, 'LPE': 0.1361, 'GLE': 10.4845, 'LLE': 0.1221, 'corner_err_end': 19.1694}
+step 3250 loss=0.2516 gnorm=1.43 | 99s
+step 3500 loss=0.2472 gnorm=2.42 | 105s
+step 3750 loss=0.2422 gnorm=1.24 | 111s
+step 4000 loss=0.2375 gnorm=1.19 | 117s
+DEV(n=240) {'GPE': 11.5155, 'LPE': 0.1411, 'GLE': 10.2389, 'LLE': 0.126, 'corner_err_end': 18.6141}

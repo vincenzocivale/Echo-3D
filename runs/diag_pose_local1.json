@@ -1,0 +1,478 @@
+{
+ "arm": "pose",
+ "ckpt": "runs/pilot/code/runs/local1.pt",
+ "window": 1,
+ "train": {
+  "deltas_and_lags": {
+   "components": {
+    "tx": {
+     "gt_mean": 0.0094,
+     "gt_std": 0.2953,
+     "pred_mean": 0.0011,
+     "pred_std": 0.0021,
+     "std_ratio": 0.0072,
+     "corr": 0.0135,
+     "skill_vs_identity": 0.0004
+    },
+    "ty": {
+     "gt_mean": -0.0005,
+     "gt_std": 0.1517,
+     "pred_mean": -0.0033,
+     "pred_std": 0.0012,
+     "std_ratio": 0.0079,
+     "corr": -0.0106,
+     "skill_vs_identity": -0.0006
+    },
+    "tz": {
+     "gt_mean": -0.0119,
+     "gt_std": 0.2912,
+     "pred_mean": -0.004,
+     "pred_std": 0.0069,
+     "std_ratio": 0.0236,
+     "corr": 0.0102,
+     "skill_vs_identity": 0.0009
+    },
+    "wx": {
+     "gt_mean": 0.0001,
+     "gt_std": 0.0012,
+     "pred_mean": 0.0001,
+     "pred_std": 0.0,
+     "std_ratio": 0.0122,
+     "corr": 0.0022,
+     "skill_vs_identity": 0.0056
+    },
+    "wy": {
+     "gt_mean": -0.0,
+     "gt_std": 0.0011,
+     "pred_mean": -0.0,
+     "pred_std": 0.0,
+     "std_ratio": 0.0391,
+     "corr": -0.0226,
+     "skill_vs_identity": -0.0031
+    },
+    "wz": {
+     "gt_mean": 0.0,
+     "gt_std": 0.0016,
+     "pred_mean": 0.0,
+     "pred_std": 0.0,
+     "std_ratio": 0.0073,
+     "corr": -0.0156,
+     "skill_vs_identity": -0.0007
+    }
+   },
+   "step_cosine_mean": 0.0092,
+   "step_cosine_median": 0.0025,
+   "metrics_vs_identity": {
+    "GPE": {
+     "model": 85.6465,
+     "identity": 85.6724,
+     "skill": 0.0003
+    },
+    "GLE": {
+     "model": 80.2989,
+     "identity": 80.3764,
+     "skill": 0.001
+    },
+    "LPE": {
+     "model": 0.384,
+     "identity": 0.3839,
+     "skill": -0.0001
+    },
+    "LLE": {
+     "model": 0.3906,
+     "identity": 0.3906,
+     "skill": 0.0001
+    },
+    "lag1": {
+     "model": 0.3971,
+     "identity": 0.397,
+     "skill": -0.0002
+    },
+    "lag4": {
+     "model": 1.5318,
+     "identity": 1.5316,
+     "skill": -0.0001
+    },
+    "lag16": {
+     "model": 6.0197,
+     "identity": 6.0191,
+     "skill": -0.0001
+    },
+    "lag64": {
+     "model": 23.8609,
+     "identity": 23.8594,
+     "skill": -0.0001
+    },
+    "lag256": {
+     "model": 92.9401,
+     "identity": 92.939,
+     "skill": -0.0
+    }
+   }
+  },
+  "overlap": {
+   "elevational_distance_mm": {
+    "0-1": {
+     "n": 1888,
+     "err_model": 2.5971,
+     "err_identity": 2.5968,
+     "skill": -0.0001
+    },
+    "1-3": {
+     "n": 1770,
+     "err_model": 6.0104,
+     "err_identity": 6.0101,
+     "skill": -0.0
+    },
+    "3-10": {
+     "n": 1695,
+     "err_model": 11.2829,
+     "err_identity": 11.2836,
+     "skill": 0.0001
+    },
+    "10-30": {
+     "n": 1162,
+     "err_model": 23.2348,
+     "err_identity": 23.2349,
+     "skill": 0.0
+    },
+    "30-1000000000.0": {
+     "n": 49,
+     "err_model": 34.2598,
+     "err_identity": 34.2585,
+     "skill": -0.0
+    }
+   },
+   "inplane_overlap_fraction": {
+    "0.75-1.01": {
+     "n": 6557,
+     "err_model": 9.6214,
+     "err_identity": 9.6215,
+     "skill": 0.0
+    },
+    "0.25-0.75": {
+     "n": 7,
+     "err_model": 36.6346,
+     "err_identity": 36.5224,
+     "skill": -0.0031
+    }
+   }
+  },
+  "sensitivity": {
+   "0": {
+    "true": {
+     "GPE": 69.041,
+     "LPE": 0.483,
+     "lag16": 7.623,
+     "lag64": 29.834,
+     "mean_step_mm": 0.008
+    },
+    "other": {
+     "GPE": 69.09,
+     "LPE": 0.483,
+     "lag16": 7.625,
+     "lag64": 29.85,
+     "mean_step_mm": 0.0079
+    },
+    "static": {
+     "GPE": 69.167,
+     "LPE": 0.484,
+     "lag16": 7.63,
+     "lag64": 29.868,
+     "mean_step_mm": 0.0078
+    }
+   },
+   "541": {
+    "true": {
+     "GPE": 116.857,
+     "LPE": 0.499,
+     "lag16": 7.95,
+     "lag64": 32.583,
+     "mean_step_mm": 0.0081
+    },
+    "other": {
+     "GPE": 116.858,
+     "LPE": 0.499,
+     "lag16": 7.949,
+     "lag64": 32.582,
+     "mean_step_mm": 0.0081
+    },
+    "static": {
+     "GPE": 116.813,
+     "LPE": 0.498,
+     "lag16": 7.946,
+     "lag64": 32.565,
+     "mean_step_mm": 0.008
+    }
+   }
+  }
+ },
+ "val": {
+  "deltas_and_lags": {
+   "components": {
+    "tx": {
+     "gt_mean": 0.0108,
+     "gt_std": 0.3131,
+     "pred_mean": 0.0011,
+     "pred_std": 0.0021,
+     "std_ratio": 0.0068,
+     "corr": 0.005,
+     "skill_vs_identity": 0.0002
+    },
+    "ty": {
+     "gt_mean": -0.0118,
+     "gt_std": 0.1197,
+     "pred_mean": -0.0033,
+     "pred_std": 0.0012,
+     "std_ratio": 0.0101,
+     "corr": 0.012,
+     "skill_vs_identity": 0.0047
+    },
+    "tz": {
+     "gt_mean": -0.0133,
+     "gt_std": 0.298,
+     "pred_mean": -0.0039,
+     "pred_std": 0.0069,
+     "std_ratio": 0.0231,
+     "corr": 0.0126,
+     "skill_vs_identity": 0.0011
+    },
+    "wx": {
+     "gt_mean": -0.0,
+     "gt_std": 0.0012,
+     "pred_mean": 0.0001,
+     "pred_std": 0.0,
+     "std_ratio": 0.0123,
+     "corr": 0.0029,
+     "skill_vs_identity": -0.0032
+    },
+    "wy": {
+     "gt_mean": -0.0,
+     "gt_std": 0.0012,
+     "pred_mean": -0.0,
+     "pred_std": 0.0,
+     "std_ratio": 0.0366,
+     "corr": 0.01,
+     "skill_vs_identity": -0.0002
+    },
+    "wz": {
+     "gt_mean": 0.0001,
+     "gt_std": 0.0013,
+     "pred_mean": 0.0,
+     "pred_std": 0.0,
+     "std_ratio": 0.0089,
+     "corr": 0.0115,
+     "skill_vs_identity": 0.0023
+    }
+   },
+   "step_cosine_mean": 0.0166,
+   "step_cosine_median": 0.0151,
+   "metrics_vs_identity": {
+    "GPE": {
+     "model": 91.7298,
+     "identity": 91.7571,
+     "skill": 0.0003
+    },
+    "GLE": {
+     "model": 82.6571,
+     "identity": 82.7375,
+     "skill": 0.001
+    },
+    "LPE": {
+     "model": 0.4026,
+     "identity": 0.4025,
+     "skill": -0.0001
+    },
+    "LLE": {
+     "model": 0.4031,
+     "identity": 0.4034,
+     "skill": 0.0008
+    },
+    "lag1": {
+     "model": 0.4123,
+     "identity": 0.4122,
+     "skill": -0.0001
+    },
+    "lag4": {
+     "model": 1.6029,
+     "identity": 1.6028,
+     "skill": -0.0001
+    },
+    "lag16": {
+     "model": 6.3615,
+     "identity": 6.3606,
+     "skill": -0.0001
+    },
+    "lag64": {
+     "model": 25.2802,
+     "identity": 25.2776,
+     "skill": -0.0001
+    },
+    "lag256": {
+     "model": 98.8381,
+     "identity": 98.8116,
+     "skill": -0.0003
+    }
+   }
+  },
+  "overlap": {
+   "elevational_distance_mm": {
+    "0-1": {
+     "n": 1938,
+     "err_model": 2.7778,
+     "err_identity": 2.7779,
+     "skill": 0.0001
+    },
+    "1-3": {
+     "n": 1773,
+     "err_model": 6.1879,
+     "err_identity": 6.1875,
+     "skill": -0.0001
+    },
+    "3-10": {
+     "n": 1806,
+     "err_model": 11.7525,
+     "err_identity": 11.7571,
+     "skill": 0.0004
+    },
+    "10-30": {
+     "n": 1192,
+     "err_model": 25.0349,
+     "err_identity": 25.0312,
+     "skill": -0.0002
+    },
+    "30-1000000000.0": {
+     "n": 58,
+     "err_model": 34.5963,
+     "err_identity": 34.6044,
+     "skill": 0.0002
+    }
+   },
+   "inplane_overlap_fraction": {
+    "0.75-1.01": {
+     "n": 6748,
+     "err_model": 10.1924,
+     "err_identity": 10.1928,
+     "skill": 0.0
+    },
+    "0.25-0.75": {
+     "n": 19,
+     "err_model": 34.1961,
+     "err_identity": 34.2323,
+     "skill": 0.0011
+    }
+   }
+  },
+  "sensitivity": {
+   "0": {
+    "true": {
+     "GPE": 96.798,
+     "LPE": 0.4,
+     "lag16": 5.953,
+     "lag64": 23.203,
+     "mean_step_mm": 0.0081
+    },
+    "other": {
+     "GPE": 96.866,
+     "LPE": 0.401,
+     "lag16": 5.958,
+     "lag64": 23.226,
+     "mean_step_mm": 0.0081
+    },
+    "static": {
+     "GPE": 96.928,
+     "LPE": 0.401,
+     "lag16": 5.96,
+     "lag64": 23.234,
+     "mean_step_mm": 0.008
+    }
+   },
+   "61": {
+    "true": {
+     "GPE": 99.758,
+     "LPE": 0.432,
+     "lag16": 6.841,
+     "lag64": 27.717,
+     "mean_step_mm": 0.0081
+    },
+    "other": {
+     "GPE": 99.809,
+     "LPE": 0.432,
+     "lag16": 6.841,
+     "lag64": 27.723,
+     "mean_step_mm": 0.0082
+    },
+    "static": {
+     "GPE": 99.651,
+     "LPE": 0.432,
+     "lag16": 6.831,
+     "lag64": 27.676,
+     "mean_step_mm": 0.008
+    }
+   }
+  }
+ },
+ "grads": {
+  "per_module": {
+   "pos": {
+    "params_m": 0.0269,
+    "grad_norm": 0.0002,
+    "weight_norm": 3.2627
+   },
+   "embed": {
+    "params_m": 0.197,
+    "grad_norm": 0.0027,
+    "weight_norm": 11.2528
+   },
+   "enc.layers.0": {
+    "params_m": 1.7745,
+    "grad_norm": 0.0025,
+    "weight_norm": 45.6675
+   },
+   "enc.layers.1": {
+    "params_m": 1.7745,
+    "grad_norm": 0.0016,
+    "weight_norm": 45.6261
+   },
+   "enc.layers.2": {
+    "params_m": 1.7745,
+    "grad_norm": 0.0016,
+    "weight_norm": 45.6364
+   },
+   "enc.layers.3": {
+    "params_m": 1.7745,
+    "grad_norm": 0.0016,
+    "weight_norm": 45.6759
+   },
+   "enc.layers.4": {
+    "params_m": 1.7745,
+    "grad_norm": 0.0017,
+    "weight_norm": 45.735
+   },
+   "enc.layers.5": {
+    "params_m": 1.7745,
+    "grad_norm": 0.0018,
+    "weight_norm": 45.8049
+   },
+   "enc.layers.6": {
+    "params_m": 1.7745,
+    "grad_norm": 0.0019,
+    "weight_norm": 45.8731
+   },
+   "enc.layers.7": {
+    "params_m": 1.7745,
+    "grad_norm": 0.0019,
+    "weight_norm": 45.9267
+   },
+   "head": {
+    "params_m": 0.0042,
+    "grad_norm": 48.3423,
+    "weight_norm": 18.923
+   }
+  },
+  "mean_pairwise_cosine_across_batches": {
+   "encoder": -0.1239,
+   "decoder_or_head": -0.1209
+  }
+ }
+}

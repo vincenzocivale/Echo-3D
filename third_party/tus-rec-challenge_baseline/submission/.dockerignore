@@ -1,0 +1,11 @@
+__pycache__/
+./baseline_model/__pycache__/
+./utils/__pycache__/
+./data/
+./results/
+./results*/
+README.md
+Dockerfile
+tus-rec.tar
+md5sums.txt
+Freehand_US_data_val.zip

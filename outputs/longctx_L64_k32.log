@@ -1,0 +1,23 @@
+/home/vcivale/Echo-3D/scripts/train_longctx.py:36: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  return [(e, torch.load(os.path.join(cache, key(e) + ".pt"))) for e in entries]
+L64_k32: L=64 offsets=[1, 2, 4, 8, 16, 32] | 960 train scans usable
+step 250 loss=0.3746 gnorm=1.62 | 9s
+step 500 loss=0.2347 gnorm=1.81 | 18s
+step 750 loss=0.2312 gnorm=1.87 | 27s
+step 1000 loss=0.2321 gnorm=1.99 | 36s
+DEV(every7) {'GPE': 12.5926, 'LPE': 0.1533, 'GLE': 11.0582, 'LLE': 0.1396, 'corner_err_end': 20.3341}
+step 1250 loss=0.2234 gnorm=1.15 | 49s
+step 1500 loss=0.2197 gnorm=1.63 | 58s
+step 1750 loss=0.2136 gnorm=1.11 | 67s
+step 2000 loss=0.2129 gnorm=1.89 | 76s
+DEV(every7) {'GPE': 11.7276, 'LPE': 0.1517, 'GLE': 10.2691, 'LLE': 0.1379, 'corner_err_end': 19.0341}
+step 2250 loss=0.2076 gnorm=1.05 | 89s
+step 2500 loss=0.2116 gnorm=1.23 | 98s
+step 2750 loss=0.2104 gnorm=1.17 | 107s
+step 3000 loss=0.2034 gnorm=0.815 | 116s
+DEV(every7) {'GPE': 10.6764, 'LPE': 0.1513, 'GLE': 9.1535, 'LLE': 0.1376, 'corner_err_end': 16.8082}
+step 3250 loss=0.208 gnorm=1.84 | 130s
+step 3500 loss=0.2049 gnorm=1.17 | 139s
+step 3750 loss=0.1998 gnorm=0.995 | 148s
+step 4000 loss=0.1983 gnorm=1.78 | 157s
+DEV(n=240) {'GPE': 10.9246, 'LPE': 0.1573, 'GLE': 9.7324, 'LLE': 0.1403, 'corner_err_end': 17.7677}

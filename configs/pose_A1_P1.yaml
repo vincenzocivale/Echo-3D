@@ -1,0 +1,41 @@
+arm: A1
+encoder:
+  frozen: true
+  layers:
+  - 8
+  - 12
+  pretrained: true
+loss:
+  nll: false
+  sigma_rot: 0.002
+  sigma_trans: 0.4
+model:
+  depth: 2
+  dim: 256
+  heads: 8
+  pool: mean
+  sinkhorn_iters: 3
+offsets:
+- 1
+- 2
+- 4
+- 8
+out_dir: outputs
+seed: 17
+size:
+- 192
+- 256
+split: configs/splits/split_v1.json
+train:
+  batch: 32
+  eval_every: 1000
+  eval_scans_every: 7
+  lr: 0.0003
+  reverse_prob: 0.0
+  steps: 5000
+  warmup: 200
+  wd: 0.01
+  workers: 8
+wandb:
+  enabled: false
+  project: usmotion4d
